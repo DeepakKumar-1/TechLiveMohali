@@ -1,5 +1,7 @@
 package com.company.Week1;
 
+import java.util.Scanner;
+
 public class Functions {
     public static void fun(){
         System.out.println("I Just got Executed");
@@ -16,6 +18,9 @@ public class Functions {
     }
     // Method Overloading
     public static float add(float a, float b){
+        Scanner sc = new Scanner(System.in);
+        int c =  sc.nextInt();
+        System.out.println(c);
         return a+b;
     }
     // Recursion
@@ -33,6 +38,8 @@ public class Functions {
         return fib(n-1) + fib(n-2);
     }
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(add(2.6f, 4.9f));
     }
 }
