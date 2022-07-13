@@ -7,6 +7,7 @@ class MyFrame3 extends Frame implements ItemListener{
     Checkbox c1, c2, c3;
     CheckboxGroup cbg;
     MyFrame3(){
+        super("Radio Button");
         cbg = new CheckboxGroup();
         l = new Label("Nothing is Selected");
         c1 = new Checkbox("Java", false, cbg);
