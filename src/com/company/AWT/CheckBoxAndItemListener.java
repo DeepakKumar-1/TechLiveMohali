@@ -44,7 +44,7 @@ class MyFrame2 extends Frame implements ItemListener{
         }
     }
 }
-public class CheckBoxAndRadioButtonAndItemListener {
+public class CheckBoxAndItemListener {
     public static void main(String []args){
         MyFrame2 f = new MyFrame2();
         f.setSize(500, 500);
