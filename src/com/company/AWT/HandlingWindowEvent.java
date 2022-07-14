@@ -2,7 +2,7 @@ package com.company.AWT;
 import java.awt.*;
 import java.awt.event.*;
 
-class MyFrame16 extends Frame {
+class MyFrame16 extends Frame implements  WindowListener{
     Label l;
     MyFrame16(){
         super("Window Event");
