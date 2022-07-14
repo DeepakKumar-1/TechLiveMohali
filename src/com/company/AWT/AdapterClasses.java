@@ -2,16 +2,16 @@ package com.company.AWT;
 import java.awt.*;
 import java.awt.event.*;
 
-class MyFrame17 extends Frame{
-    MyFrame17(){
+class MyWindowAdapter extends WindowAdapter {
+    public void windowClosing(WindowEvent we) {
+        System.exit(0);
+    }
+}
+
+class MyFrame17 extends Frame {
+    MyFrame17() {
         super("Adapter Class Demo");
         addWindowListener(new MyWindowAdapter());
-    }
-
-    static class MyWindowAdapter extends WindowAdapter{
-        public void windowClosing(WindowEvent we){
-            System.exit(0);
-        }
     }
 }
 public class AdapterClasses {
