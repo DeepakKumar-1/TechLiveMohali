@@ -2,7 +2,7 @@ package com.company.AWT;
 import java.awt.*;
 import java.awt.event.*;
 
-// Method 1 : Frame Class
+// Method 1 : Frame Class as Listener
 //class MyFrame18 extends Frame implements ActionListener{
 //    TextField tf;
 //    Button b;
