@@ -6,8 +6,9 @@ class MyFrame16 extends Frame {
     Label l;
     MyFrame16(){
         super("Window Event");
-
+        setLayout(new FlowLayout());
         l = new Label("");
+        add(l);
     }
 }
 
