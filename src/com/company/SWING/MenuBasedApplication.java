@@ -1,28 +1,31 @@
 package com.company.SWING;
 import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import java.awt.*;
 
 
 class MyFrame1 extends JFrame{
-    JMenu m;
-    JMenuItem file, open, close;
+    JMenu file;
+    JMenuItem open, save, close;
     JMenuBar mb;
+    JTextField tf;
     MyFrame1(){
         super("Menu Bar");
 
-        file = new JMenuItem("File");
+        save = new JMenuItem("Save");
         open = new JMenuItem("Open");
         close = new JMenuItem("Close");
 
-        m = new JMenu();
-
-        m.add(file);
-        m.add(open);
-        m.add(close);
+        file = new JMenu("File");
+        file.add(open);
+        file.add(save);
+        file.add(close);
 
         mb = new JMenuBar();
-        mb.add(m);
+        mb.add(file);
         setLayout(new FlowLayout());
+        tf = new JTextField("", 20);
+        add(tf);
         setJMenuBar(mb);
     }
 }
@@ -32,5 +35,6 @@ public class MenuBasedApplication {
         MyFrame1 f = new MyFrame1();
         f.setSize(500, 500);
         f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
