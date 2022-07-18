@@ -53,7 +53,7 @@ import java.awt.event.*;
 //}
 
 
-// Method 3 : Anonymous Class
+//// Method 3 : Anonymous Class
 //class MyFrame18 extends Frame{
 //    TextField tf;
 //    Button b;

@@ -1,5 +1,6 @@
 package com.company;
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthScrollBarUI;
 import javax.swing.text.NumberFormatter;
 import java.awt.*;
 import java.awt.event.*;
@@ -19,6 +20,7 @@ class MyFrame extends JFrame {
         t = new JTextField(30);
         t.setEditable(false);
         add(t);
+        setLayout(new BorderLayout(0, 5));
 
 //        num = new JTextField(10);
 //        add(num);
@@ -31,6 +33,7 @@ class MyFrame extends JFrame {
         tf.setFont(new Font(null, Font.BOLD, 50));
         tf.setEditable(false);
         tf.setBackground(Color.WHITE);
+
 
         JPanel p1 = new JPanel();
         p1.add(t);
@@ -442,6 +445,36 @@ class MyFrame extends JFrame {
                 t.setText(newTxt);
             }
         });
+    }
+
+    class MyMouseListener implements MouseListener{
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+
     }
 }
 public class Calculator {
