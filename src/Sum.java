@@ -9,6 +9,7 @@ class MyFrame extends JFrame implements ActionListener{
         JFormattedTextField tf1, tf2, tf3;
         JButton b;
     public MyFrame(){
+
             l1 = new JLabel("Enter First Number: ");
             l2 = new JLabel("Enter Second Number: ");
             l3 = new JLabel("Result: ");
